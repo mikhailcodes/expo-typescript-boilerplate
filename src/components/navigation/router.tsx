@@ -8,7 +8,7 @@ export const Navigation = () => {
   const { isAuthenticated, isLoading } = useAuthenticationStatus();
 
   console.log('====================================');
-  console.log(isAuthenticated);
+  console.log('Authenticated?', isAuthenticated);
   console.log('====================================');
   return (
     <>
