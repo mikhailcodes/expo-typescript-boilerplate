@@ -2,10 +2,10 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export const AboutScreen = () => {
+export const UnauthScreen = () => {
   return (
     <View style={styles.container}>
-      <Text>About screen!</Text>
+      <Text>Unauth screen! </Text>
       <StatusBar style="auto" />
     </View>
   );

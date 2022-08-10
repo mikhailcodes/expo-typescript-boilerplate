@@ -1,14 +1,16 @@
+import React from 'react';
 import { store } from './src/store';
 import { Provider } from 'react-redux';
-import { BottomTabs } from './src/navigation/BottomTabs';
+import { Navigation } from './src/components/navigation/router';
 import { NativeBaseProvider } from 'native-base';
+import { nhost, NhostReactProvider } from './src/lib/nhost.js';
 
 export default function App() {
   return (
-    <Provider store={store}>
+    <NhostReactProvider store={store} nhost={nhost}>
       <NativeBaseProvider>
-        <BottomTabs />
+        <Navigation />
       </NativeBaseProvider>
-    </Provider>
+    </NhostReactProvider>
   );
 }

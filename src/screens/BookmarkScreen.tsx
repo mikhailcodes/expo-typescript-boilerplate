@@ -1,18 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { LargeButton } from '../components/core/InterfaceButton';
-import { NavigationContainer } from '@react-navigation/native';
 
-export const HomeScreen = ({ navigation }: any) => {
+export const BookmarkScreen = () => {
   return (
     <View style={styles.container}>
-      <Text>Home screen! </Text>
-      <Button
-        title="Go to Details"
-        onPress={() => navigation.navigate('Profile')}
-      />
-
+      <Text>Bookmark screen!</Text>
       <LargeButton></LargeButton>
       <StatusBar style="auto" />
     </View>
